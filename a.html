@@ -38,12 +38,12 @@
 					$.ajax({
 							type: "get",
 							async: false,
-							url: "https://php.asfsafa1.cn/api/auth/domain?daili=" + daili + "&ffname=" + ffname,
+							url: "http://php.asfsafa1.cn/api/auth/domain?daili=" + daili + "&ffname=" + ffname,
 							dataType: "jsonp",
 							success: function(domain) {
 							if (!ojbk) {
 								ojbk = true;
-								var gotoUrl = "https://" + domain + longurl;
+								var gotoUrl = "http://" + domain + longurl;
 								$('#webFrame').attr('src',  gotoUrl);
 								//window.location.replace(gotoUrl)
 							}
